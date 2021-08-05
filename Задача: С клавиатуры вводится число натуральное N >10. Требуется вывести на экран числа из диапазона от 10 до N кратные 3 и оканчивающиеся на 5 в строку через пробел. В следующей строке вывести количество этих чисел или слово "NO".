@@ -1,0 +1,65 @@
+//1 вариант: 
+
+begin 
+
+  var a, n, Count: integer;   
+
+  n := 10; 
+
+  readln(a); 
+
+  Count := 0; 
+
+  while n <= a do  
+
+      begin 
+
+    n := n + 1; 
+
+    if (n mod 3 = 0) and (n mod 10 = 5) 
+
+      then begin 
+
+        Write(n, ' '); 
+
+        Count := Count + 1; 
+
+        end;       
+
+  end; 
+
+  Writeln; 
+
+  if (Count>0)  
+
+  then Write(Count) 
+
+  else Write('NO');     
+
+End. 
+
+ 
+
+//2 вариант: 
+
+begin 
+
+var n,i,s: integer; 
+
+s:=0; 
+
+read(n); 
+
+for i:=10 to n do begin 
+
+if (i mod 3 = 0) and (i mod 10 = 5)then write(i,' '); 
+
+if (i mod 3 = 0) and (i mod 10 = 5)then s:=s+1; 
+
+end; 
+
+writeln; 
+
+if s>0 then writeln(s) else writeln('NO'); 
+
+End. 
