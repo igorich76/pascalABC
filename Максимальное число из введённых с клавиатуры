@@ -1,0 +1,8 @@
+##
+var (max, n) := (0, 1);
+while n >0 do
+begin
+  n := ReadlnInteger;
+  if n > max then max := n;
+end;
+Println('max =', max)
