@@ -1,0 +1,53 @@
+const 
+
+  minAge = 18;   
+
+type 
+
+  Human = class 
+
+  public 
+
+    Name: string; 
+
+    Age: integer; 
+
+    Height: integer; 
+
+  end;  
+
+var 
+
+  h: Human;   
+
+begin 
+
+  h := new Human; 
+
+  Writeln('Привет! Я хочу узнать немного о тебе.'); 
+
+  Write('Как тебя зовут? '); 
+
+  Readln(h.Name); 
+
+  Writeln('Прекрасно, ', h.Name, ', а теперь скажи, сколько тебе лет? '); 
+
+  Readln(h.Age); 
+
+  if (h.Age >= minAge) 
+
+    then Writeln('Здорово! Ты уже совершенно взрослый!') 
+
+  else Write('Ой! Да ты еще совсем мал. '); 
+
+  Writeln('Ладно. А скажи-ка, какой у тебя рост (см)?'); 
+
+  Readln(h.Height);    
+
+  Writeln(); 
+
+  Writeln('Ну вот и всё. Мы собрали всю необходимую инфу:'); 
+
+  Writeln('Тебя зовут ', h.Name, ', твой возраст ', h.Age, ', твой рост ', h.Height); 
+
+end. 
