@@ -1,0 +1,12 @@
+program K1; 
+var a:integer; 
+label m1;
+begin 
+a:=1000;
+writeln('Начало счёта:'); 
+writeln(a); 
+m1: a:=a-1; 
+writeln(a);
+if a<=0 then writeln('Счёт окончен!') 
+        else goto m1; 
+end.  
