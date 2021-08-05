@@ -1,0 +1,13 @@
+begin 
+  var v1,v2,s,t,rasst,P:real; 
+  writeln('Введите скорость первого авто ');
+  readln(v1); 
+  writeln('Введите скорость второго авто ');
+  readln(v2); 
+  writeln('Введите расстояние м/у ними '); 
+  readln(rasst); 
+  writeln('Введите время сближения ');
+  readln(t); 
+  P:=rasst-(t*(v1+v2));
+  writeln(abs(P):6:3); 
+end. 
