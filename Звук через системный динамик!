@@ -1,0 +1,4 @@
+USES CRT; 
+begin 
+  system.Console.Beep(700,10000); //(частота, длительность) 
+End. 
