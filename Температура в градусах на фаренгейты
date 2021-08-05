@@ -1,0 +1,7 @@
+begin 
+  var temp_far,temp_celc:real;
+  writeln('Введите температуру в Фаренгейтах!'); 
+  readln(temp_far); 
+  temp_celc:=((temp_far - 32)*5)/9; 
+  writeln('Температура в Цельсиях равна ',temp_celc:7:2);
+End. 
