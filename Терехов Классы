@@ -1,23 +1,14 @@
 const 
-
-  minAge = 18;   
-
-type 
-
+  minAge = 18;
+type
   Human = class 
-
   public 
-
     Name: string; 
-
     Age: integer; 
-
-    Height: integer; 
-
+    Height: integer;
   end;  
 
 var 
-
   h: Human;   
 
 begin 
