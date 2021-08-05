@@ -1,0 +1,13 @@
+var 
+  a, b, proizv: Integer;  
+begin 
+  for a := 1 to 9 do 
+  begin 
+    WriteLn;  
+    for b := 1 to 9 do 
+    begin 
+      proizv := a * b; 
+      Write(a, '*', b, '=', proizv:3, '   ') 
+    end 
+  end 
+End. 
