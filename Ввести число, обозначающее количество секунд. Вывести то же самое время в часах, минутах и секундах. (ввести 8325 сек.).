@@ -1,0 +1,8 @@
+begin 
+var a,b,c,d: integer; 
+read(a); {введите количество секунд} 
+b:= a div 60 div 60; 
+c:= a div 60 mod 60;
+d:= a mod 60; 
+print(b,c,d); 
+end. 
