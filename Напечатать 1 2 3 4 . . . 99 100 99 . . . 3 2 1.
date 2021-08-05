@@ -1,0 +1,24 @@
+label m, m2; 
+var f: Integer; 
+
+begin 
+
+  Write('Начало счета ');
+  f := 1; 
+  m: Write(f, ' '); 
+  f := f + 1; 
+  if f <= 100 then goto m; 
+  if f = 100 then goto m2;
+
+  m2: while f > 1 do  
+    begin 
+
+    f:= f - 1; 
+    f:= f - 1; 
+    Write(f,' '); 
+
+     end;  
+
+  Write(' Конец счета') 
+
+End. 
