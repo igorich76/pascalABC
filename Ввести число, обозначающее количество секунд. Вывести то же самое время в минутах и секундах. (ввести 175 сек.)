@@ -1,0 +1,7 @@
+begin 
+var a,b,c:integer; 
+read(a); 
+b:=a div 60; 
+c:=a mod 60;
+print(b,c); 
+end. 
