@@ -1,0 +1,18 @@
+uses graphABC;
+begin;
+Circle(100,100,50);
+Circle(100,200,50);
+Circle(100,300,50);
+while true do
+begin;
+floodfill(100,100,clred);
+sleep(1000);
+floodfill(100,100,clwhite);
+floodfill(100,200,clyellow);
+sleep(1000);
+floodfill(100,200,clwhite);
+floodfill(100,300,clgreen);
+sleep(1000);
+floodfill(100,300,clwhite);
+end;
+end.
