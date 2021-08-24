@@ -1,0 +1,25 @@
+##
+var a, b, c, num: integer; 
+var otvet: boolean;
+  read(num);
+  a := num mod 10; 
+  b := num div 10 mod 10; 
+  c := num div 100; 
+  if (a = b) and (a = c) then 
+    begin
+    otvet := true;
+    //Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
+    end
+    //else Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
+  if (b = a) and (b = c) then 
+    begin
+    otvet := true;
+    //Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
+    end
+    //else Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
+  if (c = b) and (c = a) then 
+    begin
+    otvet := true;
+    //Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
+    end
+    //else Writeln('Верно ли, что все цифры введённого числа одинаковы? ', otvet);
