@@ -1,0 +1,153 @@
+{$apptype windows}
+
+//подключаем стандартные библеотеки виндовса
+
+{$reference 'System.Windows.Forms.dll'}
+
+{$reference 'System.Drawing.dll'}
+
+//подключаем необходимые модули
+
+uses System, System.Net,System.IO,system.windows.forms;
+
+//описываем форму кнопку, два лабеля(для вывода текста) и кнопку
+
+var Myform:system.Windows.forms.form;
+
+txtbox:system.Windows.forms.textbox;
+
+txtbox2:system.Windows.forms.textbox;
+
+txtbox3:system.Windows.forms.textbox;
+
+But:system.Windows.forms.button;
+
+label1:system.Windows.forms.label;
+
+label2:system.Windows.forms.label;
+
+//берём специально тип real что бы можно было слаживать дробные числа
+
+num1,num2,otvet:real;
+
+// вот это происходит если пользователь нажал на кнопку
+
+procedure Pluc(sender:object;e:eventArgs);
+
+begin
+
+//также оброботаем исключение что бы форма не падала при не корекном в воде
+
+try
+
+num1:=strtofloat(txtbox.Text);//преобразовыем текст из первого текстбокса в число и это значение присваевыем переменной
+
+num2:=strtofloat(txtbox2.Text);//то же самое только текст из второго текстбокса и переменная другая
+
+otvet:=num1+num2;//ответ присваевыем переменный
+
+txtbox3.Text:=otvet.tostring;// и ответ выводим в третий текстбокс и преобразовыем ответ в текст
+
+except
+
+//показываем что произошла ошибка
+
+messagebox.Show('произошла ошибка','error');
+
+end;
+
+end;
+
+begin
+
+//даём характеристику первоу текстбоксу
+
+txtbox:=system.Windows.forms.textbox.Create;//создаём его
+
+txtbox.Left:=20;//отступ от левого края
+
+txtbox.Top:=50;//отступ от потолка
+
+txtbox.Width:=70;
+
+txtbox2:=system.Windows.forms.textbox.Create;
+
+txtbox2.Left:=120;
+
+txtbox2.Top:=50;
+
+txtbox2.Width:=70;//тоже самое
+
+txtbox3:=system.Windows.forms.textbox.Create;
+
+txtbox3.Left:=210;
+
+txtbox3.Top:=50;
+
+txtbox3.Width:=70;//тоже самое
+
+txtbox3.ReadOnly:=true;//что бы пользователь не мог в водить данные
+
+label1:=system.windows.forms.Label.Create;
+
+label1.Width:=10;
+
+label1.Height:=10;
+
+label1.Top:=50;
+
+label1.Left:=100;
+
+label1.Text:='+';
+
+label2:=system.windows.forms.Label.Create;
+
+label2.Width:=10;
+
+label2.Height:=10;
+
+label2.Top:=50;
+
+label2.Left:=195;
+
+label2.Text:='=';//вообщем это всё для красаты
+
+But:=system.windows.forms.button.Create;
+
+But.Width:=80;
+
+but.Height:=40;
+
+but.Top:=80;
+
+but.Left:=200;
+
+but.Text:='подщитать';
+
+but.Click+=pluc;//описываем кнопку и то что будет происходить по нажатию
+
+Myform:=system.Windows.forms.form.Create;
+
+myform.Text:='++';//заголовок формк
+
+myform.Height:=200;
+
+myform.Width:=300;// и наконей описываем форму
+
+//дабавляем всё то что мы описали на форму
+
+myform.Controls.Add(txtbox);
+
+myform.Controls.Add(txtbox2);
+
+myform.Controls.Add(txtbox3);
+
+myform.Controls.Add(label1);
+
+myform.Controls.Add(label2);
+
+myform.Controls.Add(but);
+
+myform.ShowDialog;//ну и показываем диалог
+
+end.
