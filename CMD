@@ -1,0 +1,34 @@
+uses CRT;
+
+begin
+var x:= 30; //координаты курсора по горизонтали в позициях
+var y:= 2;
+GotoXY(x, y); 
+TextColor(CRT.Magenta);
+Writeln('УСТРОЙСТВО КОМПЬЮТЕРА');
+// - -еще есть TextBackground (окрашивает фон строки в консольном окне -----  
+//TextBackground + ClrScr (окрашивает всё окно вывода)-----
+var x2:= 30;
+var y2:= 5;
+GotoXY(x2, y2);
+TextColor(CRT.Yellow);
+Writeln('Устройства вывода');
+//-------------------------------------
+var x3:= 30;
+var y3:= 7;
+GotoXY(x3, y3);
+TextColor(CRT.Yellow);
+Writeln('- монитор');
+//-------------------------------------
+var x4:= 30;
+var y4:= 9;
+GotoXY(x4, y4);
+TextColor(CRT.Yellow);
+Writeln('- принтер'); 
+//---------------------------------------
+var x5:= 30;
+var y5:= 11;
+GotoXY(x5, y5);
+TextColor(CRT.Yellow);
+Writeln('- колонки');  
+end.
