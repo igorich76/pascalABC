@@ -1,0 +1,9 @@
+##
+var a:= ReadArrReal(10);
+var s: real;
+a.Max.Println;
+a.Min.Println;
+s:= a[1];
+a[1]:= a[3];
+a[3]:= s;
+a.Println;
