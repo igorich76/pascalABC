@@ -1,0 +1,19 @@
+function MaxH(a, b, c, S: real) := (2 * S) / a;
+
+begin
+  
+  var (a, b, c) := ReadlnReal3; 
+  var (d, e, f) := ReadlnReal3;
+  var (g, h, j) := ReadlnReal3;
+  //---1---
+  var P1 := (a + b + c) / 2;
+  var S1 := Sqrt(P1 * (P1 - a) * (P1 - b) * (P1 - c));
+  //---2---
+  var P2 := (d + e + f) / 2;
+  var S2 := Sqrt(P2 * (P2 - d) * (P2 - e) * (P2 - f));
+  //---3---
+  var P3 := (g + h + j) / 2;
+  var S3 := Sqrt(P3 * (P3 - g) * (P3 - h) * (P3 - j));
+  //---ИТОГ---
+  Print(Max(Round(MaxH(a, b, c, S1), 1), Round(MaxH(d, e, f, S2), 1), Round(MaxH(g, h, j, S3), 1)));
+end.
