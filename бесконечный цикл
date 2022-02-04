@@ -1,0 +1,2 @@
+##
+while true do write(-99 + random(199):4)
