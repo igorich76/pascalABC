@@ -1,0 +1,13 @@
+##
+var n:= ReadInteger;
+var (S1, S2, S3):= (0.0,0.0,0.0);
+for var i:= 1 to n do
+begin
+  var a1:= ((i + 1)/(i + 2));  
+  S1:= S1 + a1;
+  var a2:= (-1)**(i+1)*(3*i-2)/((i**2)+1);
+  S2:= S2 + a2;
+  var a3:= (1/i**2);
+  S3:= S3 + a3;
+end;
+Print(Round(S1, 7), Round(S2, 7), Round(S3, 7));
