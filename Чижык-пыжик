@@ -1,0 +1,17 @@
+procedure doo:=system.Console.Beep(523,500);
+procedure re:=system.Console.Beep(587,500);
+procedure mi:=system.Console.Beep(659,500);
+procedure fa:=system.Console.Beep(698,500);
+procedure sol:=system.Console.Beep(784,500);
+procedure la:=system.Console.Beep(880,500);
+procedure si:=system.Console.Beep(988,500);
+procedure Чижик:=(doo+re+mi+sol+sol+la+si+doo+doo+doo);
+//begin
+//doo;re;mi;sol;sol;la;si;doo;doo;doo;
+//end;
+begin 
+  Println('1 куплет');
+  Чижик;
+  Println('2 куплет');
+  Чижик;
+end.
