@@ -1,0 +1,9 @@
+##
+var a,b,c,d,e,f,j,h,k: integer;
+a:= Random(a, 1);b:= Random(b, 1);c:= Random(b, 1);
+d:= Random(b, 1);e:= Random(b, 1);f:= Random(b, 1);
+j:= Random(b, 1);h:= Random(b, 1);k:= Random(b, 1);
+Println(a);Println(b);Println(c);
+Println(d);Println(e);Println(f);
+Println(j);Println(h);Println(k);
+if (a=b) and (b=c) and (c=d) and (d=e) and (e=f) and (f=j) and (j=h) and (h=k) then Print('Победа!!!');
