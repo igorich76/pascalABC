@@ -1,0 +1,6 @@
+##
+var n := ReadInteger;
+var a := new integer[n];
+for var i := 0 to n-1 do Read(a[i]);
+Swap(a[a.IndexMax],a[a.IndexMin]);
+a.Print(', ')
