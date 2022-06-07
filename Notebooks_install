@@ -1,0 +1,17 @@
+1. скачать установщик и установить Python3: https://www.python.org/downloads/windows/
+
+2. проверить установку: cmd - python --version
+
+3. cmd - pip install jupyterlab
+
+4. Скачать ядро PascalABC.NET для Jupyter Lab:
+http://pascalabc.net/downloads/pabc_kernel_master.zip
+
+5. перейти в папку со скачанным архивом, например: cd C:\Users\1\Downloads
+
+6. Инсталлировать ядро PascalABC.NET для Jupyter Lab:
+pip install pabc_kernel_master.zip
+python -m pabc_kernel.install
+
+7. Запустить Jupyter Lab (в cmd!): jupyter lab 
+(должен открыться браузер!)
