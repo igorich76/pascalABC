@@ -1,0 +1,10 @@
+##
+Console.OutputEncoding := Encoding.Default; //вывод кирилицы (не работает в ide, только для pabc-тетради!)
+Println('zzzzzzzzz');
+var a: integer;
+a:=10;
+var b: integer;
+b:=100;
+Println(2+3, a);
+Println(b);
+Println($'Привет, как дела? Переменная b равна {b}'); //такой способ тоже легитимен!
