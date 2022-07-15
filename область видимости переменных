@@ -1,0 +1,13 @@
+program pr2;
+var s:string;//s - глобальная переменная
+begin
+  s:='первая строка';
+  Writeln(s);
+  var s2:='вторая строка';//s2 видима только в begin-end
+  Writeln(s2);
+  if 10=10 then 
+  begin
+    var s3:='третья строка';//s3 видима только в if
+    Writeln(s3);
+  end;
+end.
