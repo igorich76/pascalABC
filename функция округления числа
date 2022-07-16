@@ -1,0 +1,9 @@
+program pr2;
+function okr(a: real):real; //функция округления вещественного числа
+begin
+  Result:=Round(a);
+end;
+begin
+  var b:=ReadlnReal('Введите число>>');//принимаем число
+  Print(okr(b)); //передаём параметр в функцию
+end.
