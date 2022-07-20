@@ -1,0 +1,15 @@
+var f: Text;
+begin
+Assign(f, 'page.html');
+Rewrite(f);
+WriteLn(f, '<!doctype html>');
+WriteLn(f, '<html>');
+WriteLn(f, ' <body>');
+WriteLn(f, ' <h1>Моя страница</h1>');
+Writeln(f, '<h2>Ещё она строка</h2>');
+WriteLn(f, ' <p>А вот еще одна. </p>');
+WriteLn(f, ' </body>');
+WriteLn(f, '</html>');
+Close(f);
+Execute('page.html');
+end.
