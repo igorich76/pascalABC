@@ -1,0 +1,7 @@
+##
+writeln('мы нашли в лесу');
+var N := ReadlnInteger('введите N');
+write(n);
+if (n div 10 mod 10 = 1) or (n mod 10 in [0, 5..9]) then writeln(' грибов')
+else if n mod 10 in [2..4] then writeln(' гриба')
+else writeln(' гриб')
