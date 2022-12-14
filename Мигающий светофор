@@ -16,3 +16,19 @@ sleep(1000);
 floodfill(100,300,clwhite);
 end;
 end.
+////////////////////////////
+//мигание одного цвета (эксперимент)
+uses graphABC;
+
+begin;
+  Circle(100, 100, 50);
+  Circle(100, 200, 50);
+  Circle(100, 300, 50);
+  while true do
+  begin;
+    floodfill(100, 100, clwhite);
+    sleep(1000);
+    floodfill(100, 100, clred);
+    sleep(1000);
+  end;
+end.
