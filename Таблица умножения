@@ -13,21 +13,19 @@ begin
 End. 
 //////// = чисто моё решение, подсмотрел только write, в этом случае удобнее так = ///////
 ##
-var (a, b, proizv) := (0, 0, 0);
+var (a, b) := (0, 0);
 for var i := 1 to 9 do
 begin
   a += 1;
   for var j := 1 to 10 do
   begin
     b += 1; 
-    proizv := a * b;
-    Write(b, '*', a, '=', proizv:3, '   ');    
+    Write(b, '*', a, '=', (a*b):3, '   ');    
   end;
   b := 0;   
   Println();
 end; 
 for var g := 1 to 10 do
 begin
-  proizv := 10 * g;
-  Write(g, '*', a + 1, '=', proizv:2, '   '); 
+  Write(g, '*', a + 1, '=', (10*g):2, '   '); 
 end; 
