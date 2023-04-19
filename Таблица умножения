@@ -29,3 +29,6 @@ for var i := 1 to 10 do
 begin
   Write(i, '*', a + 1, '=', (10*i):2, '   '); 
 end; 
+// код бомба
+## 
+range(2,10).select(b->range(2,9).select(a->$'{a}·{b}={a*b}').JoinIntoString).PrintLines
