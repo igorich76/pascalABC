@@ -1,0 +1,28 @@
+uses Sounds,GraphWPF,Controls;
+
+var ss: Sound;
+
+procedure Звук;
+begin
+  if ss <> nil then 
+      exit;
+    ss := new Sound('C:\Users\igori\OneDrive\Рабочий стол\Музыка\13-01-2023\Anton_Pavlovsky_Noisy_MaN_-_Black_Black_Heart_Cover_David_Usher_68769075.mp3');
+    ss.Play;
+end;
+
+procedure Стоп;
+begin
+  if ss <> nil then
+      ss.Stop;
+    ss := nil;
+end;
+
+begin
+  
+  var b1 := Button(10,10,'Play',100);
+  var b2 := Button(10,50,'Stop',100);
+  
+  b1.Click := Звук;
+  b2.Click += Стоп; 
+  
+end.
