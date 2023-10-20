@@ -1,0 +1,10 @@
+##
+var n := ReadInteger('Введите количество элементов до 100:');
+var mass := new real[n];
+for var i := 0 to n-1 do
+begin
+  mass[i] := RandomReal(1,99);
+  Println(i+1, ')',mass[i]);
+end;
+// или весь массив разом:
+mass.Println;
