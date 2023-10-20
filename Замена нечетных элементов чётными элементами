@@ -1,0 +1,12 @@
+##
+var (mass, j) := (new integer[10], 0);
+for var i := 0 to mass.Length-1 do mass[i] := Random(1,99);
+mass.Println;
+while j <= 9 do
+  begin
+    var t := mass[j+1];
+    mass[j+1] := mass[j];
+    mass[j] := t;
+    j += 2;
+  end;
+mass.Print();
